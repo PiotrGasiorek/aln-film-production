@@ -63,10 +63,35 @@ body {
 
 .header {
     margin-bottom: clamp(var(--spacing-md), 10vw, 200px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl)
+}
+
+.header_cta {
+    background-color: var(--palette-primary-main);
+    color: rgb(var(--palette-white-100));
+    text-align: center;
+    font-size: 0.833rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md) var(--spacing-2xl);
+    align-self: flex-start;
+}
+
+.header_cta:hover {
+    filter: brightness(90%);
 }
 
 .header_title {
     margin-bottom: 0;
+}
+
+.header_subtitle {
+    color: rgb(var(--palette-white-100));
+    font-size: 2.1rem;
+    font-weight: 600;
 }
 
 .contact_section_header {
@@ -239,7 +264,7 @@ details[open] .faq_card_header_title::after {
     content: '+';
     font-size: 40px;
     position: absolute;
-    top: var(--spacing-md);
+    top: var(--spacing-lg);
     right: var(--spacing-xl);
 }
 
