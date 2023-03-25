@@ -1,0 +1,47 @@
+:root {
+    --palette-primary-main: #401796;
+
+    --palette-grey-600: 68, 71, 88;
+    --palette-grey-500: 63, 65, 81;
+    --palette-grey-400: 52, 54, 68;
+    --palette-grey-300: 42, 43, 54;
+    --palette-grey-200: 31, 32, 40;
+    --palette-grey-100: 25, 26, 32;
+   
+    --palette-white-100: 255, 255, 255;
+    --palette-white-200: 233, 233, 233;
+    --palette-white-300: 222, 222, 222;
+    --palette-white-400: 185, 185, 185;
+    --palette-white-500: 173, 173, 173;
+    --palette-white-600: 166, 166, 166;
+    --palette-white-700: 185, 185, 185;
+
+    --breakpoints-xs: 360px;
+    --breakpoints-sm: 375px;
+    --breakpoints-md: 414px;
+    --breakpoints-lg: 1366px;
+    --breakpoints-xl: 1536px;
+    --breakpoints-2xl: 1920px;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 48px;
+    --spacing-4xl: 64px;
+    --spacing-5xl: 80px;
+    --spacing-6xl: 96px;
+    --spacing-7xl: 112px;
+    --spacing-8xl: 128px;
+
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-2xl: 24px;
+}
+
+/* https://typescale.com/?size=22&scale=1.200&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false */
