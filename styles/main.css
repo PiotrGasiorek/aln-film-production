@@ -19,7 +19,7 @@ html {
 }
 
 .link-as-txt {
-    color: var(--palette-primary-main);
+    color: #5248d2;
     filter: brightness(210%);
 }
 
