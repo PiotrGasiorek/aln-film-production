@@ -28,6 +28,8 @@ body {
 }
 
 .wrapper {
+    width: 2400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding-top: 10vw;
