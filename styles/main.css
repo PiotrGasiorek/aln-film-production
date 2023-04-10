@@ -1,18 +1,27 @@
 @charset "UTF-8";
 
 @import "reset.css";
+@import "animations.css";
 @import "variables.css";
 @import "typography.css";
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: auto;
   }
 
 @media screen and (max-width: 768px) {
     html {
       font-size: 18px;
     }
-  }
+}
+
+body {
+  height: auto;
+  background-color: rgb(var(--palette-grey-200));
+  position: relative;
+}
 
 ::selection {
     background-color: var(--palette-primary-main);
@@ -21,10 +30,6 @@ html {
 .link-as-txt {
     color: #5c53d4;
     filter: brightness(210%);
-}
-
-body {
-    background-color: rgb(var(--palette-grey-200));
 }
 
 .wrapper {
@@ -39,8 +44,6 @@ body {
     @media only screen and (max-width: 768px) {
         padding: var(--spacing-md);
     }
-
-
 }
 
 @media only screen and (max-width: 680px) {
@@ -68,22 +71,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-3xl)
-}
-
-.header_cta {
-    background-color: var(--palette-primary-main);
-    color: rgb(var(--palette-white-100));
-    text-align: center;
-    font-size: 0.833rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: var(--border-radius-md);
-    padding: var(--spacing-md) var(--spacing-2xl);
-    align-self: flex-start;
-}
-
-.header_cta:hover {
-    filter: brightness(90%);
 }
 
 .header_title {
@@ -151,8 +138,9 @@ body {
 
 .card_body {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg) var(--spacing-2xl);
 }
 
 .card_footer {
@@ -164,6 +152,10 @@ body {
     display: flex;
     flex-direction: column;
     color: rgb(var(--palette-white-200));
+}
+
+.contactWrapper--lg {
+    width: 100%;
 }
 
 .contactWrapper_label {
@@ -193,30 +185,44 @@ body {
 }
 
 .blob {
-    position: fixed;
+    max-width: 80vw;
+    position: absolute;
     z-index: -1;
-    user-select: none;
+    background-color: var(--palette-primary-main);
+    aspect-ratio: 1;
+    filter: blur(50px);
+    border-radius: 100%;
+    animation-duration: 7s;
+    animation-name: blob;
+    animation-iteration-count: infinite;
 }
 
-.blob--middle-right {
-    top: 60vh;
-    right: -20px;
-    filter: blur(50px);
-    width: 400px;
-}
-
-.blob--middle-middle {
-    top: 60vh;
-    right: 30%;
-    filter: blur(50px);
-    width: 200px;
+.blob--top-middle {
+    top: 80vh;
+    right: 20%;
+    width: 300px;
+    animation-delay: 4000ms;
 }
 
 .blob--top-right {
-    top: 40vh;
-    right: -20px;
-    filter: blur(50px);
+    top: 30vh;
+    right: 5%;
     width: 200px;
+    animation-delay: 2000ms;
+}
+
+.blob--bottom-right {
+    bottom: 20vh;
+    right: -20px;
+    width: 200px;
+    animation-delay: 4000ms;
+}
+
+.blob--bottom-middle {
+    bottom: 40vh;
+    right: 50%;
+    width: 300px;
+    animation-delay: 2000ms;
 }
 
 .faq_section, .contact_section {
